@@ -28,7 +28,9 @@ app.use("/api/v1/admin", require("./routes/adminRoutes"));
 
 //port
 const PORT = process.env.PORT || 8080;
-
+app.get("/",(req,res)=>{
+    res.send("kya aapke tooth paste mein namak hai ? ")
+  })
 //listen
 app.listen(PORT, () => {
   console.log(
